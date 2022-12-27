@@ -39,6 +39,11 @@ namespace LeaveManagement.Repositories
             throw new NotImplementedException();
         }
 
+        public bool IsExists(int id)
+        {
+            return _db.LeaveTypes.Any(x => x.Id == id);
+        }
+
         public bool Save()
         {
             return _db.SaveChanges() > 0;

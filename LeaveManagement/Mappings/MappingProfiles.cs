@@ -10,8 +10,6 @@ namespace LeaveManagement.Mappings
         public MappingProfiles()
         {
             CreateMap<LeaveType, LeaveTypeVM>().ReverseMap();
-            CreateMap<LeaveType, CreateLeaveTypeVM>().ReverseMap();
-            CreateMap<LeaveType, DetailsLeaveTypeVM>().ReverseMap();
 
             CreateMap<LeaveHistory, LeaveHistoryVM>().ReverseMap();
             CreateMap<LeaveAllocation, LeaveAllocationVM>().ReverseMap();

@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 
 namespace LeaveManagement.Data
 {
@@ -8,6 +9,7 @@ namespace LeaveManagement.Data
         public int Id { get; set; }
         [Required]
         public string Name { get; set; }
-        public DateTime Datecreated { get; set; }
+        [DisplayName("Date Created")]
+        public Nullable<DateTime> Datecreated { get; set; }
     }
 }
